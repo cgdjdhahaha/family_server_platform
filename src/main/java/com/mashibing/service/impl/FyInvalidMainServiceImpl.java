@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.FyInvalidMain;
 import com.mashibing.mapper.FyInvalidMainMapper;
-import com.mashibing.service.FyInvalidMainService;
+import com.mashibing.service.base.FyInvalidMainService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

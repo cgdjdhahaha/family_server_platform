@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblDeptkey;
 import com.mashibing.mapper.TblDeptkeyMapper;
-import com.mashibing.service.TblDeptkeyService;
+import com.mashibing.service.base.TblDeptkeyService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

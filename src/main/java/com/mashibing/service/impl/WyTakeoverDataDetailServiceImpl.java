@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.WyTakeoverDataDetail;
 import com.mashibing.mapper.WyTakeoverDataDetailMapper;
-import com.mashibing.service.WyTakeoverDataDetailService;
+import com.mashibing.service.base.WyTakeoverDataDetailService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

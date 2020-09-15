@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.WyEmailReceive;
 import com.mashibing.mapper.WyEmailReceiveMapper;
-import com.mashibing.service.WyEmailReceiveService;
+import com.mashibing.service.base.WyEmailReceiveService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblDesktop;
 import com.mashibing.mapper.TblDesktopMapper;
-import com.mashibing.service.TblDesktopService;
+import com.mashibing.service.base.TblDesktopService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

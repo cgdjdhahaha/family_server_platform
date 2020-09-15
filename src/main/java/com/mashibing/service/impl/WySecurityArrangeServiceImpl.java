@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.WySecurityArrange;
 import com.mashibing.mapper.WySecurityArrangeMapper;
-import com.mashibing.service.WySecurityArrangeService;
+import com.mashibing.service.base.WySecurityArrangeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

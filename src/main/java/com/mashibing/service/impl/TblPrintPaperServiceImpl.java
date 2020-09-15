@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblPrintPaper;
 import com.mashibing.mapper.TblPrintPaperMapper;
-import com.mashibing.service.TblPrintPaperService;
+import com.mashibing.service.base.TblPrintPaperService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.ZhRentContractRefund;
 import com.mashibing.mapper.ZhRentContractRefundMapper;
-import com.mashibing.service.ZhRentContractRefundService;
+import com.mashibing.service.base.ZhRentContractRefundService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

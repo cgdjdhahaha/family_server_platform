@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblType;
 import com.mashibing.mapper.TblTypeMapper;
-import com.mashibing.service.TblTypeService;
+import com.mashibing.service.base.TblTypeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

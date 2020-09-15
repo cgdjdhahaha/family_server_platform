@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblRoleMenuPrivi;
 import com.mashibing.mapper.TblRoleMenuPriviMapper;
-import com.mashibing.service.TblRoleMenuPriviService;
+import com.mashibing.service.base.TblRoleMenuPriviService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

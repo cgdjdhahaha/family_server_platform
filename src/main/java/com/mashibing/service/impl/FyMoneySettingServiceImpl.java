@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.FyMoneySetting;
 import com.mashibing.mapper.FyMoneySettingMapper;
-import com.mashibing.service.FyMoneySettingService;
+import com.mashibing.service.base.FyMoneySettingService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblLoginLog;
 import com.mashibing.mapper.TblLoginLogMapper;
-import com.mashibing.service.TblLoginLogService;
+import com.mashibing.service.base.TblLoginLogService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

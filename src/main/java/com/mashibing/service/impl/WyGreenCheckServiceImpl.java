@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.WyGreenCheck;
 import com.mashibing.mapper.WyGreenCheckMapper;
-import com.mashibing.service.WyGreenCheckService;
+import com.mashibing.service.base.WyGreenCheckService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

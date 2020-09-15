@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblDbSetting;
 import com.mashibing.mapper.TblDbSettingMapper;
-import com.mashibing.service.TblDbSettingService;
+import com.mashibing.service.base.TblDbSettingService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblColor;
 import com.mashibing.mapper.TblColorMapper;
-import com.mashibing.service.TblColorService;
+import com.mashibing.service.base.TblColorService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

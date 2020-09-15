@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.WyEstateOutProject;
 import com.mashibing.mapper.WyEstateOutProjectMapper;
-import com.mashibing.service.WyEstateOutProjectService;
+import com.mashibing.service.base.WyEstateOutProjectService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

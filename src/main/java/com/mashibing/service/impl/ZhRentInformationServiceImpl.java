@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.ZhRentInformation;
 import com.mashibing.mapper.ZhRentInformationMapper;
-import com.mashibing.service.ZhRentInformationService;
+import com.mashibing.service.base.ZhRentInformationService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

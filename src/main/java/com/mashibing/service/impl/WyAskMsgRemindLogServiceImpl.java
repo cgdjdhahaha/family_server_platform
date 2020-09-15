@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.WyAskMsgRemindLog;
 import com.mashibing.mapper.WyAskMsgRemindLogMapper;
-import com.mashibing.service.WyAskMsgRemindLogService;
+import com.mashibing.service.base.WyAskMsgRemindLogService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

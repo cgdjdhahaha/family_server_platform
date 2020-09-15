@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.FyEstateTemporary;
 import com.mashibing.mapper.FyEstateTemporaryMapper;
-import com.mashibing.service.FyEstateTemporaryService;
+import com.mashibing.service.base.FyEstateTemporaryService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

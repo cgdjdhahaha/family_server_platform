@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.FyPublicBoxUser;
 import com.mashibing.mapper.FyPublicBoxUserMapper;
-import com.mashibing.service.FyPublicBoxUserService;
+import com.mashibing.service.base.FyPublicBoxUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

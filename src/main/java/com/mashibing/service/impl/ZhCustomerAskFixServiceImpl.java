@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.ZhCustomerAskFix;
 import com.mashibing.mapper.ZhCustomerAskFixMapper;
-import com.mashibing.service.ZhCustomerAskFixService;
+import com.mashibing.service.base.ZhCustomerAskFixService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

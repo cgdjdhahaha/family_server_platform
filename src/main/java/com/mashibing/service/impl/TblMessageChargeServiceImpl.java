@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblMessageCharge;
 import com.mashibing.mapper.TblMessageChargeMapper;
-import com.mashibing.service.TblMessageChargeService;
+import com.mashibing.service.base.TblMessageChargeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

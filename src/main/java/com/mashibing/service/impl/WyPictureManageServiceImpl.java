@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.WyPictureManage;
 import com.mashibing.mapper.WyPictureManageMapper;
-import com.mashibing.service.WyPictureManageService;
+import com.mashibing.service.base.WyPictureManageService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

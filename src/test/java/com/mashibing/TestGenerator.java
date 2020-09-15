@@ -19,7 +19,7 @@ public class TestGenerator {
         //全局配置
         GlobalConfig globalConfig = new GlobalConfig();
         globalConfig.setAuthor("lian")
-                .setOutputDir("/Users/tu/Documents/java/project/family_server_platform/src/test/java")//设置输出路径
+                .setOutputDir("/Users/yuanchao/Desktop/hejiayun/family_server_platform/src/main/java")//设置输出路径
                 .setFileOverride(true)//设置文件覆盖
                 .setIdType(IdType.AUTO)//设置主键生成策略
                 .setServiceName("%sService")//service接口的名称

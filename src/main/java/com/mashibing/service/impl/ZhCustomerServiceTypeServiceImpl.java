@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.ZhCustomerServiceType;
 import com.mashibing.mapper.ZhCustomerServiceTypeMapper;
-import com.mashibing.service.ZhCustomerServiceTypeService;
+import com.mashibing.service.base.ZhCustomerServiceTypeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

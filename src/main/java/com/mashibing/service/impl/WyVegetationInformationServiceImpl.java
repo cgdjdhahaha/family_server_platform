@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.WyVegetationInformation;
 import com.mashibing.mapper.WyVegetationInformationMapper;
-import com.mashibing.service.WyVegetationInformationService;
+import com.mashibing.service.base.WyVegetationInformationService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

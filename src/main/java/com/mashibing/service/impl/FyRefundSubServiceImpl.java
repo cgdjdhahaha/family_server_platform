@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.FyRefundSub;
 import com.mashibing.mapper.FyRefundSubMapper;
-import com.mashibing.service.FyRefundSubService;
+import com.mashibing.service.base.FyRefundSubService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

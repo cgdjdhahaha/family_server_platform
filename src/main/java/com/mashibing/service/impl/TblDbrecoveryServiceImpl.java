@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblDbrecovery;
 import com.mashibing.mapper.TblDbrecoveryMapper;
-import com.mashibing.service.TblDbrecoveryService;
+import com.mashibing.service.base.TblDbrecoveryService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblMainMenu;
 import com.mashibing.mapper.TblMainMenuMapper;
-import com.mashibing.service.TblMainMenuService;
+import com.mashibing.service.base.TblMainMenuService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

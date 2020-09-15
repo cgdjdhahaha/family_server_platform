@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblGroupRecord;
 import com.mashibing.mapper.TblGroupRecordMapper;
-import com.mashibing.service.TblGroupRecordService;
+import com.mashibing.service.base.TblGroupRecordService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

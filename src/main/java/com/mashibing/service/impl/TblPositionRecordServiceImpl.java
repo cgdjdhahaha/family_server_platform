@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblPositionRecord;
 import com.mashibing.mapper.TblPositionRecordMapper;
-import com.mashibing.service.TblPositionRecordService;
+import com.mashibing.service.base.TblPositionRecordService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

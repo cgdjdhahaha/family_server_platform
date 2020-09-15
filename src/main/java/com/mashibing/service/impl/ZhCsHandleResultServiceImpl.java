@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.ZhCsHandleResult;
 import com.mashibing.mapper.ZhCsHandleResultMapper;
-import com.mashibing.service.ZhCsHandleResultService;
+import com.mashibing.service.base.ZhCsHandleResultService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

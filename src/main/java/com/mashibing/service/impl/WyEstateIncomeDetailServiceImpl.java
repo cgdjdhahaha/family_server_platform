@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.WyEstateIncomeDetail;
 import com.mashibing.mapper.WyEstateIncomeDetailMapper;
-import com.mashibing.service.WyEstateIncomeDetailService;
+import com.mashibing.service.base.WyEstateIncomeDetailService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

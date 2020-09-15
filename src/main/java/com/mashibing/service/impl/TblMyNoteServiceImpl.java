@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblMyNote;
 import com.mashibing.mapper.TblMyNoteMapper;
-import com.mashibing.service.TblMyNoteService;
+import com.mashibing.service.base.TblMyNoteService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

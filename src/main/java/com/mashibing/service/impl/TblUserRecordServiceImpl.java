@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblUserRecord;
 import com.mashibing.mapper.TblUserRecordMapper;
-import com.mashibing.service.TblUserRecordService;
+import com.mashibing.service.base.TblUserRecordService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

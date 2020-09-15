@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.FyPreReceive;
 import com.mashibing.mapper.FyPreReceiveMapper;
-import com.mashibing.service.FyPreReceiveService;
+import com.mashibing.service.base.FyPreReceiveService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

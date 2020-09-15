@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.FySaleContract;
 import com.mashibing.mapper.FySaleContractMapper;
-import com.mashibing.service.FySaleContractService;
+import com.mashibing.service.base.FySaleContractService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

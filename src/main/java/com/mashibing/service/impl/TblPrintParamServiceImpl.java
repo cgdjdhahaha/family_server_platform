@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblPrintParam;
 import com.mashibing.mapper.TblPrintParamMapper;
-import com.mashibing.service.TblPrintParamService;
+import com.mashibing.service.base.TblPrintParamService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

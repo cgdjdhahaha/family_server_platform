@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.FyShareStandingBookDetail;
 import com.mashibing.mapper.FyShareStandingBookDetailMapper;
-import com.mashibing.service.FyShareStandingBookDetailService;
+import com.mashibing.service.base.FyShareStandingBookDetailService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

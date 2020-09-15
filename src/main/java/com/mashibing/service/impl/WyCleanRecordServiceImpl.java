@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.WyCleanRecord;
 import com.mashibing.mapper.WyCleanRecordMapper;
-import com.mashibing.service.WyCleanRecordService;
+import com.mashibing.service.base.WyCleanRecordService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

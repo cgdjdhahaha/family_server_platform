@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblNetdiskDir;
 import com.mashibing.mapper.TblNetdiskDirMapper;
-import com.mashibing.service.TblNetdiskDirService;
+import com.mashibing.service.base.TblNetdiskDirService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

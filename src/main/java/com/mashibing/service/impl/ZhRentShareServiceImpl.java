@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.ZhRentShare;
 import com.mashibing.mapper.ZhRentShareMapper;
-import com.mashibing.service.ZhRentShareService;
+import com.mashibing.service.base.ZhRentShareService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

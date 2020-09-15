@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblWorkDate;
 import com.mashibing.mapper.TblWorkDateMapper;
-import com.mashibing.service.TblWorkDateService;
+import com.mashibing.service.base.TblWorkDateService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblEmployeeContactCategory;
 import com.mashibing.mapper.TblEmployeeContactCategoryMapper;
-import com.mashibing.service.TblEmployeeContactCategoryService;
+import com.mashibing.service.base.TblEmployeeContactCategoryService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

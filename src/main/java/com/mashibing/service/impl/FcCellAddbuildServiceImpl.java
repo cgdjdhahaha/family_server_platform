@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.FcCellAddbuild;
 import com.mashibing.mapper.FcCellAddbuildMapper;
-import com.mashibing.service.FcCellAddbuildService;
+import com.mashibing.service.base.FcCellAddbuildService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

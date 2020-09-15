@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.TblVoteDetail;
 import com.mashibing.mapper.TblVoteDetailMapper;
-import com.mashibing.service.TblVoteDetailService;
+import com.mashibing.service.base.TblVoteDetailService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

@@ -2,7 +2,7 @@ package com.mashibing.service.impl;
 
 import com.mashibing.bean.WyFireFacility;
 import com.mashibing.mapper.WyFireFacilityMapper;
-import com.mashibing.service.WyFireFacilityService;
+import com.mashibing.service.base.WyFireFacilityService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
