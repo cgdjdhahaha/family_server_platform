@@ -41,7 +41,7 @@ public class TblUserRecord implements Serializable {
     /**
      * 岗位角色
      */
-    private Integer userRole;
+    private TblRole tblRole;
 
     /**
      * 用户性别
@@ -51,7 +51,7 @@ public class TblUserRecord implements Serializable {
     /**
      * 所属部门
      */
-    private Integer userDept;
+    private TblDept tblDept;
 
     /**
      * 职位
@@ -126,7 +126,7 @@ public class TblUserRecord implements Serializable {
     /**
      * 所属公司
      */
-    private String company;
+    private TblCompany tblCompany;
 
     /**
      * 是否部门管理者
@@ -181,12 +181,12 @@ public class TblUserRecord implements Serializable {
         this.userType = userType;
     }
 
-    public Integer getUserRole() {
-        return userRole;
+    public TblRole getTblRole() {
+        return tblRole;
     }
 
-    public void setUserRole(Integer userRole) {
-        this.userRole = userRole;
+    public void setTblRole(TblRole tblRole) {
+        this.tblRole = tblRole;
     }
 
     public String getUserGender() {
@@ -197,12 +197,12 @@ public class TblUserRecord implements Serializable {
         this.userGender = userGender;
     }
 
-    public Integer getUserDept() {
-        return userDept;
+    public TblDept getTblDept() {
+        return tblDept;
     }
 
-    public void setUserDept(Integer userDept) {
-        this.userDept = userDept;
+    public void setTblDept(TblDept tblDept) {
+        this.tblDept = tblDept;
     }
 
     public Integer getUserJob() {
@@ -317,12 +317,12 @@ public class TblUserRecord implements Serializable {
         this.remark = remark;
     }
 
-    public String getCompany() {
-        return company;
+    public TblCompany getTblCompany() {
+        return tblCompany;
     }
 
-    public void setCompany(String company) {
-        this.company = company;
+    public void setTblCompany(TblCompany tblCompany) {
+        this.tblCompany = tblCompany;
     }
 
     public String getIsDeptAdmin() {
@@ -360,32 +360,32 @@ public class TblUserRecord implements Serializable {
     @Override
     public String toString() {
         return "TblUserRecord{" +
-        "id=" + id +
-        ", userName=" + userName +
-        ", userPassword=" + userPassword +
-        ", userType=" + userType +
-        ", userRole=" + userRole +
-        ", userGender=" + userGender +
-        ", userDept=" + userDept +
-        ", userJob=" + userJob +
-        ", userStatus=" + userStatus +
-        ", officePhone=" + officePhone +
-        ", innerPhone=" + innerPhone +
-        ", movePhone=" + movePhone +
-        ", email=" + email +
-        ", isSendMsg=" + isSendMsg +
-        ", startDate=" + startDate +
-        ", stopDate=" + stopDate +
-        ", birthday=" + birthday +
-        ", ipRule=" + ipRule +
-        ", userHiredate=" + userHiredate +
-        ", isSendWchat=" + isSendWchat +
-        ", remark=" + remark +
-        ", company=" + company +
-        ", isDeptAdmin=" + isDeptAdmin +
-        ", lastLoginDate=" + lastLoginDate +
-        ", createPerson=" + createPerson +
-        ", createDate=" + createDate +
-        "}";
+            "id=" + id +
+            ", userName='" + userName + '\'' +
+            ", userPassword='" + userPassword + '\'' +
+            ", userType='" + userType + '\'' +
+            ", tblRole=" + tblRole +
+            ", userGender='" + userGender + '\'' +
+            ", tblDept=" + tblDept +
+            ", userJob=" + userJob +
+            ", userStatus='" + userStatus + '\'' +
+            ", officePhone='" + officePhone + '\'' +
+            ", innerPhone='" + innerPhone + '\'' +
+            ", movePhone='" + movePhone + '\'' +
+            ", email='" + email + '\'' +
+            ", isSendMsg='" + isSendMsg + '\'' +
+            ", startDate=" + startDate +
+            ", stopDate=" + stopDate +
+            ", birthday=" + birthday +
+            ", ipRule='" + ipRule + '\'' +
+            ", userHiredate=" + userHiredate +
+            ", isSendWchat='" + isSendWchat + '\'' +
+            ", remark='" + remark + '\'' +
+            ", tblCompany=" + tblCompany +
+            ", isDeptAdmin='" + isDeptAdmin + '\'' +
+            ", lastLoginDate=" + lastLoginDate +
+            ", createPerson='" + createPerson + '\'' +
+            ", createDate=" + createDate +
+            '}';
     }
 }
