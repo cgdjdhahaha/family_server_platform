@@ -2,12 +2,20 @@ package com.mashibing.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.mashibing.bean.TblUserRecord;
+import com.mashibing.returnJson.Permission;
+import com.mashibing.returnJson.Permissions;
+import com.mashibing.returnJson.ReturnObject;
+import com.mashibing.returnJson.UserInfo;
 import com.mashibing.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "*", methods = {}, allowedHeaders = "*", allowCredentials = "true")
@@ -17,11 +25,35 @@ public class LoginController {
     private LoginService loginService;
 
     @RequestMapping("/auth/login")
-    public String login(@RequestParam("username") String username, @RequestParam("password") String password) {
+    public String login(@RequestParam("username") String username, @RequestParam("password") String password, HttpSession session) {
         System.out.println("test");
 //        System.out.println(username+"--"+password);
         TblUserRecord tblUserRecord = loginService.login(username, password);
-        System.out.println(tblUserRecord);
-        return JSONObject.toJSONString(tblUserRecord);
+        tblUserRecord.setToken(tblUserRecord.getUserName());
+        ReturnObject returnObject = new ReturnObject(tblUserRecord);
+        session.setAttribute("userRecord", tblUserRecord);
+//        System.out.println(tblUserRecord);
+        return JSONObject.toJSONString(returnObject);
+    }
+
+    @RequestMapping("/user/info")
+    public String getInfo(HttpSession session){
+//        System.out.println("SessionGet:" + session.getAttribute("userRecord"));
+        TblUserRecord userRecord = (TblUserRecord) session.getAttribute("userRecord");
+        String[] split = userRecord.getTblRole().getRolePrivileges().split("-");
+        List<Permission> permissionList = new ArrayList<>();
+        for (String s : split) {
+            permissionList.add(new Permission(s));
+        }
+        Permissions permissions = new Permissions(permissionList);
+        UserInfo userInfo = new UserInfo(userRecord.getUserName(), permissions);
+        System.out.println(userInfo);
+        return JSONObject.toJSONString(new ReturnObject(userInfo));
+    }
+
+    @RequestMapping("/auth/logout")
+    public void logOut(HttpSession session){
+        System.out.println("logout");
+        session.invalidate();
     }
 }

@@ -2,6 +2,7 @@ package com.mashibing.bean;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+
 import java.time.LocalDateTime;
 import java.io.Serializable;
 
@@ -15,7 +16,7 @@ import java.io.Serializable;
  */
 public class TblUserRecord implements Serializable {
 
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
     /**
      * 用户编号
@@ -148,6 +149,15 @@ public class TblUserRecord implements Serializable {
      */
     private LocalDateTime createDate;
 
+    private String token;
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
 
     public Integer getId() {
         return id;
