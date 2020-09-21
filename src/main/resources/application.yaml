@@ -14,5 +14,4 @@ logging:
     level:
         com:
             mashibing:
-                mapper:
-                    common: debug
+                mapper: debug
