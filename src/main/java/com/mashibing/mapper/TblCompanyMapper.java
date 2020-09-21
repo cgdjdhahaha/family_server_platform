@@ -2,6 +2,9 @@ package com.mashibing.mapper;
 
 import com.mashibing.bean.TblCompany;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 /**
  * <p>
@@ -11,6 +14,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author lian
  * @since 2020-09-15
  */
+@Component
 public interface TblCompanyMapper extends BaseMapper<TblCompany> {
-
+    public List<TblCompany> getCompany();
 }

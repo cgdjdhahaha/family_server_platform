@@ -34,4 +34,8 @@
         id, company_full_name, company_simple_name, company_english_name, company_brand, company_type, company_trade, company_addr, post_code, company_phone, company_fax, company_website, company_email, company_national, company_land, open_bank, bank_account, company_leader, register_date, register_money, employee_number, company_intro, remark
     </sql>
 
+    <select id="getCompany" resultType="com.mashibing.bean.TblCompany">
+        select id, company_full_name from tbl_company
+    </select>
+
 </mapper>
