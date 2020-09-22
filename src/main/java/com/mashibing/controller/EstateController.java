@@ -1,6 +1,7 @@
 package com.mashibing.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.mashibing.bean.FcBuilding;
 import com.mashibing.bean.FcEstate;
 import com.mashibing.bean.TblCompany;
 import com.mashibing.returnJson.ReturnObject;
@@ -33,6 +34,26 @@ public class EstateController {
             return JSONObject.toJSONString(new ReturnObject("0", "插入失败"));
         }else {
             return JSONObject.toJSONString(new ReturnObject("1", "插入成功"));
+        }
+    }
+
+    @RequestMapping("/estate/selectBuilding")
+    public String selectBuilding(Integer buildingNumber, String estateCode){
+        System.out.println("selectBuilding");
+        List<FcBuilding> fcBuildings = estateService.selectBuilding(buildingNumber, estateCode);
+        System.out.println("fcBuildings");
+        return JSONObject.toJSONString(new ReturnObject(fcBuildings));
+    }
+
+    @RequestMapping("/estate/updateBuilding")
+    public String updateBuilding(FcBuilding fcBuilding){
+        System.out.println("updateBuilding");
+        Integer res = estateService.updateBuilding(fcBuilding);
+        System.out.println(res);
+        if (res > 0){
+            return JSONObject.toJSONString(new ReturnObject("成功"));
+        }else {
+            return JSONObject.toJSONString(new ReturnObject("失败"));
         }
     }
 }

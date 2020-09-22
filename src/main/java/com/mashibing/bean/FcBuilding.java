@@ -2,8 +2,8 @@ package com.mashibing.bean;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-import java.time.LocalDateTime;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * <p>
@@ -66,12 +66,12 @@ public class FcBuilding implements Serializable {
     /**
      * 竣工日期
      */
-    private LocalDateTime finishDate;
+    private Date finishDate;
 
     /**
      * 封顶日期
      */
-    private LocalDateTime overRoofDate;
+    private Date overRoofDate;
 
     /**
      * 装修
@@ -271,19 +271,19 @@ public class FcBuilding implements Serializable {
         this.salePermissionId = salePermissionId;
     }
 
-    public LocalDateTime getFinishDate() {
+    public Date getFinishDate() {
         return finishDate;
     }
 
-    public void setFinishDate(LocalDateTime finishDate) {
+    public void setFinishDate(Date finishDate) {
         this.finishDate = finishDate;
     }
 
-    public LocalDateTime getOverRoofDate() {
+    public Date getOverRoofDate() {
         return overRoofDate;
     }
 
-    public void setOverRoofDate(LocalDateTime overRoofDate) {
+    public void setOverRoofDate(Date overRoofDate) {
         this.overRoofDate = overRoofDate;
     }
 
