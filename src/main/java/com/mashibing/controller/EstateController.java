@@ -1,15 +1,14 @@
 package com.mashibing.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.mashibing.bean.FcBuilding;
-import com.mashibing.bean.FcEstate;
-import com.mashibing.bean.FcUnit;
-import com.mashibing.bean.TblCompany;
+import com.mashibing.bean.*;
 import com.mashibing.returnJson.ReturnObject;
 import com.mashibing.service.EstateService;
+import com.mashibing.vo.CellMessage;
 import com.mashibing.vo.UnitMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -61,12 +60,31 @@ public class EstateController {
     }
 
     @RequestMapping("/estate/selectUnit")
-    public String selectUnit(UnitMessage[] unitMessages){
+    public String selectUnit(@RequestBody UnitMessage[] unitMessages){
         System.out.println("selectUnit");
         List<FcUnit> allUnit = new ArrayList<>();
         for (UnitMessage unitMessage : unitMessages) {
             allUnit.addAll(estateService.selectUnit(unitMessage));
         }
         return JSONObject.toJSONString(new ReturnObject(allUnit));
+    }
+
+    @RequestMapping("/estate/updateUnit")
+    public String updateUnit(FcUnit fcUnit) {
+        System.out.println("updateUnit");
+        Integer res = estateService.updateUnit(fcUnit);
+        System.out.println(res);
+        if (res > 0) {
+            return JSONObject.toJSONString(new ReturnObject("成功"));
+        } else {
+            return JSONObject.toJSONString(new ReturnObject("失败"));
+        }
+    }
+
+    @RequestMapping("/estate/insertCell")
+    public String insertCell(@RequestBody CellMessage[] cellMessages){
+        System.out.println("insertCell");
+        List<FcCell> fcCells = estateService.insertCell(cellMessages);
+        return JSONObject.toJSONString(new ReturnObject(fcCells));
     }
 }

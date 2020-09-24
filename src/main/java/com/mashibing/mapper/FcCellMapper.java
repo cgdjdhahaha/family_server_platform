@@ -2,6 +2,7 @@ package com.mashibing.mapper;
 
 import com.mashibing.bean.FcCell;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.springframework.stereotype.Component;
 
 /**
  * <p>
@@ -11,6 +12,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author lian
  * @since 2020-09-15
  */
+@Component
 public interface FcCellMapper extends BaseMapper<FcCell> {
 
 }

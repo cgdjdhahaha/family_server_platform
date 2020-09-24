@@ -1,19 +1,13 @@
 package com.mashibing.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.mashibing.bean.FcBuilding;
-import com.mashibing.bean.FcEstate;
-import com.mashibing.bean.FcUnit;
-import com.mashibing.bean.TblCompany;
-import com.mashibing.mapper.FcBuildingMapper;
-import com.mashibing.mapper.FcEstateMapper;
-import com.mashibing.mapper.FcUnitMapper;
-import com.mashibing.mapper.TblCompanyMapper;
+import com.mashibing.bean.*;
+import com.mashibing.mapper.*;
+import com.mashibing.vo.CellMessage;
 import com.mashibing.vo.UnitMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.sql.Wrapper;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,6 +21,8 @@ public class EstateService {
     private FcBuildingMapper fcBuildingMapper;
     @Autowired
     private FcUnitMapper fcUnitMapper;
+    @Autowired
+    private FcCellMapper fcCellMapper;
 
     public List<TblCompany> getCompany(){
         List<TblCompany> company = tblCompanyMapper.getCompany();
@@ -73,5 +69,27 @@ public class EstateService {
             fcUnits.add(fcUnit);
         }
         return fcUnits;
+    }
+
+    public Integer updateUnit(FcUnit fcUnit){
+        return fcUnitMapper.updateById(fcUnit);
+    }
+
+    public List<FcCell> insertCell(CellMessage[] cellMessages){
+        List<FcCell> fcCells = new ArrayList<>();
+        for (CellMessage cellMessage : cellMessages) {
+            for (int i = 1; i < cellMessage.getStopFloor(); i++) {
+                for (int j = cellMessage.getStartCellId(); j < cellMessage.getStopCellId(); j++) {
+                    FcCell fcCell = new FcCell();
+                    fcCell.setUnitCode(cellMessage.getUnitCode());
+                    fcCell.setCellName(i + "0" + j);
+                    fcCell.setCellCode("C" + i + "0" + j);
+                    fcCell.setFloorNumber(i);
+                    fcCellMapper.insert(fcCell);
+                    fcCells.add(fcCell);
+                }
+            }
+        }
+        return fcCells;
     }
 }

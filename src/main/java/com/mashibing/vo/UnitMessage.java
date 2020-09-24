@@ -1,10 +1,16 @@
 package com.mashibing.vo;
 
 public class UnitMessage {
+
     private String buildingCode;
-    private Integer UnitCount;
+    private Integer unitCount;
 
     public UnitMessage() {
+    }
+
+    public UnitMessage(String buildingCode, Integer unitCount) {
+        this.buildingCode = buildingCode;
+        this.unitCount = unitCount;
     }
 
     public String getBuildingCode() {
@@ -16,10 +22,18 @@ public class UnitMessage {
     }
 
     public Integer getUnitCount() {
-        return UnitCount;
+        return unitCount;
     }
 
     public void setUnitCount(Integer unitCount) {
-        UnitCount = unitCount;
+        this.unitCount = unitCount;
+    }
+
+    @Override
+    public String toString() {
+        return "UnitMessage{" +
+            "buildingCode='" + buildingCode + '\'' +
+            ", unitCount=" + unitCount +
+            '}';
     }
 }
