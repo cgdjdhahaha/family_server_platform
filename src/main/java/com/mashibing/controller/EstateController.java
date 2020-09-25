@@ -87,4 +87,14 @@ public class EstateController {
         List<FcCell> fcCells = estateService.insertCell(cellMessages);
         return JSONObject.toJSONString(new ReturnObject(fcCells));
     }
+
+    @RequestMapping("/estate/selectBuildingByEstate")
+    public String selectBuildingByEstate(String estateCode){
+        System.out.println("estate:" + estateCode);
+        List<FcBuilding> fcBuildings = estateService.selectBuildingByEstate(estateCode);
+        System.out.println("---------------------");
+        System.out.println(fcBuildings);
+        return JSONObject.toJSONString(new ReturnObject(fcBuildings));
+    }
+
 }

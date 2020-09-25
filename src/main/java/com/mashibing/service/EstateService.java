@@ -92,4 +92,13 @@ public class EstateService {
         }
         return fcCells;
     }
+
+    public List<FcBuilding> selectBuildingByEstate(String estateCode){
+        QueryWrapper<FcBuilding> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("estate_code",estateCode);
+        queryWrapper.select("building_name","building_code");
+        List<FcBuilding> fcBuildings = fcBuildingMapper.selectList(queryWrapper);
+        return fcBuildings;
+    }
+
 }
