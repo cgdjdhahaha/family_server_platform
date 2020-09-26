@@ -45,7 +45,7 @@ public class EstateService {
         List<FcBuilding> fcBuildings = new ArrayList<>();
         for (int i = 0; i < buildingNumber; i++) {
             FcBuilding fcBuilding = new FcBuilding();
-            fcBuilding.setBuildingCode("B" + (i + 1));
+            fcBuilding.setBuildingCode(estateCode + "B" + (i + 1));
             fcBuilding.setBuildingName("第" + (i + 1) + "号楼");
             fcBuilding.setEstateCode(estateCode);
             fcBuildingMapper.insert(fcBuilding);
@@ -62,7 +62,7 @@ public class EstateService {
         List<FcUnit> fcUnits = new ArrayList<>();
         for (int i = 0; i < unitMessage.getUnitCount(); i++) {
             FcUnit fcUnit = new FcUnit();
-            fcUnit.setUnitCode("U" + (i + 1));
+            fcUnit.setUnitCode(unitMessage.getBuildingCode() + "U" + (i + 1));
             fcUnit.setBuildingCode(unitMessage.getBuildingCode());
             fcUnit.setUnitName("第" + (i + 1) + "单元");
             fcUnitMapper.insert(fcUnit);
@@ -83,7 +83,7 @@ public class EstateService {
                     FcCell fcCell = new FcCell();
                     fcCell.setUnitCode(cellMessage.getUnitCode());
                     fcCell.setCellName(i + "0" + j);
-                    fcCell.setCellCode("C" + i + "0" + j);
+                    fcCell.setCellCode(cellMessage.getUnitCode() + "C" + i + "0" + j);
                     fcCell.setFloorNumber(i);
                     fcCellMapper.insert(fcCell);
                     fcCells.add(fcCell);
@@ -101,4 +101,25 @@ public class EstateService {
         return fcBuildings;
     }
 
+    public List<FcUnit> selectUnitByBuildingCode(String buildingCode){
+        QueryWrapper<FcUnit> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("building_code",buildingCode);
+        queryWrapper.select("unit_name","unit_code");
+        List<FcUnit> fcUnits = fcUnitMapper.selectList(queryWrapper);
+        return fcUnits;
+    }
+
+    public List<FcCell> selectCellByUnitCode(String unitCode){
+        QueryWrapper<FcCell> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("unit_code",unitCode);
+        List<FcCell> fcCells = fcCellMapper.selectList(queryWrapper);
+        return fcCells;
+    }
+
+    public List<FcEstate> selectEstate(String company){
+        QueryWrapper<FcEstate> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("company", company);
+        List<FcEstate> fcEstates = fcEstateMapper.selectList(queryWrapper);
+        return fcEstates;
+    }
 }

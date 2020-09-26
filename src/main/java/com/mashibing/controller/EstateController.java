@@ -97,4 +97,28 @@ public class EstateController {
         return JSONObject.toJSONString(new ReturnObject(fcBuildings));
     }
 
+    @RequestMapping("/estate/selectUnitByBuildingCode")
+    public String selectUnitByBuildingCode(String buildingCode){
+        System.out.println("buildingCode:" + buildingCode);
+        List<FcUnit> fcUnits = estateService.selectUnitByBuildingCode(buildingCode);
+        System.out.println("---------------------");
+        System.out.println(fcUnits);
+        return JSONObject.toJSONString(new ReturnObject(fcUnits));
+    }
+
+    @RequestMapping("/estate/selectCellByUnitCode")
+    public String selectCellByUnitCode(String unitCode){
+        System.out.println("unitCode:" + unitCode);
+        List<FcCell> fcCells = estateService.selectCellByUnitCode(unitCode);
+        System.out.println("---------------------");
+        System.out.println(fcCells);
+        return JSONObject.toJSONString(new ReturnObject(fcCells));
+    }
+
+    @RequestMapping("/estate/selectEstate")
+    public String selectEstate(String company) {
+        System.out.println("selectEstate");
+        List<FcEstate> fcEstates = estateService.selectEstate(company);
+        return JSONObject.toJSONString(new ReturnObject(fcEstates));
+    }
 }
